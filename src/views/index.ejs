@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeDex</title>
+</head>
+<body>
+    <h1>PokeDex Unicesumar</h1>
+    <% results.forEach(pokemon => { %>
+    <div>
+        <p>Nome: <%= pokemon.name %></p>
+        <p>URL: <%= pokemon.url %></p>
+        <a href="/detalhar/<%=pokemon.name %>">Clique aqui para visualizar o pokemon! </a>
+    </div>
+    <% }) %>
+</body>
+</html>
